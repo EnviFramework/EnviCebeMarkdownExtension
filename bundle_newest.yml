@@ -1,0 +1,32 @@
+name: "cebe_markdown"
+type: "extension"
+description: "cebe/markdownを使用するためのエクステンションクラス"
+keywords: "markdown,cebe/markdown"
+homepage: "http://www.enviphp.net/"
+license: "LGPL-2.0"
+authors:
+    -
+        name: "akito"
+        email: "akito-artisan@five-foxes.com"
+    -
+        name: "suzunone"
+        email: "suzunone.eleven@gmail.com"
+support:
+    issues: "https://github.com/EnviMVC/EnviCebeMarkdownExtension/issues"
+    forum: "https://github.com/EnviMVC/EnviCebeMarkdownExtension/issues"
+require: {
+    php: ">=5.4"
+    envi: ">=3.4.8"
+install:
+    version: "v1.0"
+    mode: "git"
+    clone: "https://github.com/EnviMVC/EnviCebeMarkdownExtension.git"
+depend:
+    markdown:
+        homepage: "http://markdown.cebe.cc/"
+        license: "MIT"
+        install:
+            path: "libs/cebe/markdown/"
+            version: "1.1.0"
+            mode: "git"
+            clone: "https://github.com/cebe/markdown.git"

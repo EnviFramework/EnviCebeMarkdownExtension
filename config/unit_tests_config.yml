@@ -1,0 +1,117 @@
+################################################
+# This configuration file is for unit testing purposes only;
+# この設定ファイルは、ユニットテスト専用です。
+################################################
+
+all:
+  ## コンパイルエンジン ##
+    # Traditional Markdown (http://daringfireball.net/projects/markdown/syntax)
+    # compile_engine: "Markdown"
+    # GithubMarkdown (https://guides.github.com/features/mastering-markdown/)
+    compile_engine: "GithubMarkdown"
+    # MarkdownExtra (https://michelf.ca/projects/php-markdown/extra/)
+    # compile_engine: "MarkdownExtra"
+
+  ## nteger the maximum nesting level for language elements. ##
+  maximumNestingLevel: 32
+
+
+  ## キャッシュの有無: enable caching
+  is_compile_cache: true
+
+  ## 必ずコンパイルするかどうか:always compiled
+  is_force_compile: false
+
+  ## ファイルが新しければキャッシュを作り直す
+  use_intelligence_compile: true
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  ## The version number of the Less files to be automatically added to compile_id (If you update it, it will be recompiled)
+  file_version: "1.0"
+
+  ## キャッシュの保存先
+  cache_path: "<?php echo dirname(__FILE__);?>/../tests/datas/"
+
+  ## Markdown Extra拡張記法を使用する
+  use_extra: true
+
+GithubMarkdown:
+
+  compile_engine: "GithubMarkdown"
+  ## キャッシュの有無
+  is_compile_cache: false
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: true
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
+
+GithubMarkdown_cached:
+
+  compile_engine: "GithubMarkdown"
+
+  ## キャッシュの有無
+  is_compile_cache: true
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: false
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
+
+
+
+
+Markdown:
+
+  compile_engine: "Markdown"
+  ## キャッシュの有無
+  is_compile_cache: false
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: true
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
+
+Markdown_cached:
+
+  compile_engine: "Markdown"
+
+  ## キャッシュの有無
+  is_compile_cache: true
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: false
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
+
+
+
+
+MarkdownExtra:
+
+  compile_engine: "MarkdownExtra"
+  ## キャッシュの有無
+  is_compile_cache: false
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: true
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
+
+MarkdownExtra_cached:
+
+  compile_engine: "MarkdownExtra"
+
+  ## キャッシュの有無
+  is_compile_cache: true
+
+  ## 必ずコンパイルするかどうか
+  is_force_compile: false
+
+  ## compile_idに自動付加するLessファイルのバージョン番号(これを更新すると、再コンパイルされます)
+  # file_version: "1.0"
